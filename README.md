@@ -1,38 +1,27 @@
----
-output: github_document
----
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
-)
-```
-
 # ecoharmonizeR
 
-
-The goal of ecoharmonizeR is to ...
+The goal of ecoharmonizeR is to …
 
 ## Installation
 
-This is how the installation works: 
+This is how the installation works:
 
-```{r , eval = F}
+``` r
 devtools::install_github("datapumpernickel/ecoharmonizeR")
 ```
 
 ## Example
 
-This is how you could download the same data from four different sources (note that 
-you need API Keys for some of these packages) and harmonize them to be able to compare some of their values. 
+This is how you could download the same data from four different sources
+(note that you need API Keys for some of these packages) and harmonize
+them to be able to compare some of their values.
 
-You need the dev version of comtradr to use the bulk download facility. 
-```{r , eval = F}
+You need the dev version of comtradr to use the bulk download facility.
+
+``` r
 library(comRex)
 library(comtradr)
 library(Rat.las)
@@ -100,4 +89,3 @@ clean_comtrade_bulk <-
          time == 2010,
          flow_desc == "import")
 ```
-
