@@ -30,6 +30,7 @@ them to be able to compare some of their values.
 You need the dev version of comtradr to use the bulk download facility.
 
 ``` r
+library(ecoharmonizeR)
 library(comRex)
 library(comtradr)
 library(Rat.las)

@@ -40,6 +40,7 @@ you need API Keys for some of these packages) and harmonize them to be able to c
 
 You need the dev version of comtradr to use the bulk download facility. 
 ```{r , eval = F}
+library(ecoharmonizeR)
 library(comRex)
 library(comtradr)
 library(Rat.las)
