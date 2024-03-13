@@ -13,6 +13,14 @@ This is how the installation works:
 devtools::install_github("datapumpernickel/ecoharmonizeR")
 ```
 
+Note, that one of the dependencies cannot be installed from CRAN, but is
+needed for the column transformation of Eurostat data. Install `comRex`
+using:
+
+``` r
+devtools::install_github("datapumpernickel/comRex")
+```
+
 ## Example
 
 This is how you could download the same data from four different sources
