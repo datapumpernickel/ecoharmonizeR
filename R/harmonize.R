@@ -135,7 +135,7 @@ harmonize <- function(data, source){
     flow <- comtradr::ct_get_ref_table("flow_direction") |>
       dplyr::transmute(flow_code = as.character(id), flow_desc = tolower(text))
 
-    clean_data <- comtrade_bulk |>
+    clean_data <- data |>
       dplyr::filter(customs_code == "C00" & mot_code == "0" & partner2code =="0")  |>
       dplyr::left_join(reporter) |>
       dplyr::left_join(partner) |>
